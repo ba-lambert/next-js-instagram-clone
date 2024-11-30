@@ -19,7 +19,7 @@ export default function Profile() {
                             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
                                 <div className="flex flex-row items-center gap-2">
                                     <p className="text-md sm:text-xl ">Ba Lambert</p>
-                                    <IoIosSettings size={34} className="" />
+                                    <IoIosSettings size={34} className="sm:hidden" />
                                 </div>
                                 <div className="flex flex-row items-center gap-2">
                                     <button className="bg-gray-200 bg-opacity-80 text-sm rounded-lg text-black font-semibold px-6 py-2">Edit Profile</button>
@@ -28,8 +28,8 @@ export default function Profile() {
                                 <IoIosSettings size={34} className="hidden sm:block" />
                             </div>
                         </div>
-                        <div className="hidden">
-                            <div className="hidden sm:flex flex-row items-center justify-start mt-4 gap-10">
+                        <div className="hidden sm:block">
+                            <div className="flex flex-row items-center justify-start mt-4 gap-10">
                                 <p><span className="font-semibold">5 </span> Posts</p>
                                 <p><span className="font-semibold">100 </span> Followers</p>
                                 <p><span className="font-semibold">100</span> Following</p>
@@ -68,7 +68,7 @@ export default function Profile() {
 
 const ProfileHeader = () => {
     return (
-        <div className="fixed top-0 w-screen flex flex-row items-center justify-between gap-2 px-4 border-b-2 border-black py-4">
+        <div className="fixed sm:hidden top-0 w-screen flex flex-row items-center justify-between gap-2 px-4 border-b-2 border-black py-4">
             <IoIosSettings size={28} />
             <div>
                 <p className="text-md font-semibold">Ba Lambert</p>
