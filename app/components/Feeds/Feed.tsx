@@ -25,7 +25,7 @@ export default function Feed({ feed }: { feed: IFeed }) {
     };
 
     return (
-        <div className="w-[450px] min-h-[500px] mt-4">
+        <div className="sm:w-[450px] sm:min-h-[500px] mt-4">
             {/* Header */}
             <div className="flex w-full justify-between items-center py-2">
                 <div className="flex items-center gap-2">

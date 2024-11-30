@@ -59,7 +59,7 @@ const menuItems = [
 
 export default function LeftBar() {
   return (
-    <div className="relative w-[21%] border-r border-black border-opacity-20 flex flex-col space-y-10 items-start px-4 py-10">
+    <div className="relative w-[21%] border-r border-black border-opacity-20 sm:flex flex-col space-y-10 items-start px-4 py-10 hidden">
       <Image 
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" 
         alt="Instagram"
