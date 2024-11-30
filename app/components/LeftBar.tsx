@@ -11,6 +11,7 @@ import { BsPlusSquare } from 'react-icons/bs';
 import { FaRegHeart } from 'react-icons/fa';
 import { RxPerson } from 'react-icons/rx';
 import { IoIosMenu } from "react-icons/io";
+import Image from 'next/image';
 
 
 const menuItems = [
@@ -58,11 +59,13 @@ const menuItems = [
 
 export default function LeftBar() {
   return (
-    <div className="relative w-[23%] border-r border-black border-opacity-20 flex flex-col space-y-10 items-center py-4">
-      <img 
+    <div className="relative w-[21%] border-r border-black border-opacity-20 flex flex-col space-y-10 items-center py-4">
+      <Image 
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" 
-        alt="logo" 
-        width={160} 
+        alt="Instagram"
+        width={160}
+        height={48}
+        priority
       />
       
       <div className="w-full px-3">
