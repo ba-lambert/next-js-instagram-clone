@@ -12,6 +12,7 @@ import { FaRegHeart } from 'react-icons/fa';
 import { RxPerson } from 'react-icons/rx';
 import { IoIosMenu } from "react-icons/io";
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const menuItems = [
@@ -70,13 +71,14 @@ export default function LeftBar() {
       
       <div className="w-full">
         {menuItems.map((item) => (
-          <div
+          <Link
             key={item.label}
+            href={item.path}
             className="flex items-center gap-4 px-4 py-3 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors"
           >
             <item.icon size={20} />
             <span className="text-lg font-semibold">{item.label}</span>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex w-full items-center absolute bottom-6 flex-row gap-4 px-4 py-3 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors">
