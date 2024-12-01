@@ -20,9 +20,9 @@ export default function RootLayout({
           <LeftBar />
           <main className="flex relative flex-col h-full w-full sm:w-[79%]">
             {children}
-            <BottomMobile />
           </main>
         </section>
+            <BottomMobile />
       </body>
     </html>
   );
