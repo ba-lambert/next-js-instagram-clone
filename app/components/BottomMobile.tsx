@@ -43,7 +43,7 @@ const BottomBar = [
 
 export default function BottomMobile() {
   return (
-    <div className="absolute bottom-0 flex flex-row px-4 items-center bg-white justify-between sm:hidden h-14 w-full">
+    <div className="absolute bottom-0 flex flex-row px-4 items-center bg-white justify-between sm:hidden h-12 w-full">
       {BottomBar.map((item, index) => (
         <div key={index} className="flex flex-col items-center gap-2">
           <Link href={item.href}>
