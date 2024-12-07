@@ -1,7 +1,7 @@
-import Feed from "./components/Feeds/Feed";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import { feeds } from "./data/feeds";
+import Feed from "./../components/Feeds/Feed";
+import Header from "./../components/Header";
+import Sidebar from "./../components/Sidebar";
+import {feeds} from "./../data/feeds";
 
 export default function Home() {
   return (

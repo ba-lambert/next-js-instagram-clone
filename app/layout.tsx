@@ -16,13 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='relative'>
-        <section className="flex flex-row w-screen h-screen max-w-[1840px] mx-auto">
-          <LeftBar />
-          <main className="flex relative flex-col h-full w-full sm:w-[79%]">
+        <main>
             {children}
           </main>
-        </section>
-        <BottomMobile />
       </body>
     </html>
   );
