@@ -42,7 +42,7 @@ export default function Messages() {
 
                 <div className="w-full h-24 flex flex-row gap-4 justify-start px-4 items-center overflow-x-auto scrollbar-hide">
                     {Array.from({ length: 6 }).map((_, index) => (
-                        <div className="flex-shrink-0 flex flex-col items-center mt-4 w-20 h-fit">
+                        <div className="flex-shrink-0 flex flex-col items-center mt-4 w-20 h-fit" key={index}>
                             <Image src="https://res.cloudinary.com/do4supuho/image/upload/v1732727560/COMAGENCY/agukanet/Lambert.png" alt="profile" width={300} height={300} className="rounded-full w-12 h-12 sm:w-14 sm:h-14 object-cover" key={index} />
                             <p className="text-slate-600 text-sm">Ba</p>
                         </div>
@@ -70,16 +70,13 @@ export default function Messages() {
                 </div>
             </div>
 
-            {/* Update the right side to show messages or default view */}
             <div className="flex flex-col w-[70%] h-full">
                 {selectedUser ? (
                     <div className="flex flex-col h-full">
-                        {/* Chat header */}
                         <div className="h-16 border-b border-slate-700 px-6 flex items-center">
                             <p className="text-slate-600 text-lg font-semibold">{selectedUser}</p>
                         </div>
                         
-                        {/* Messages container */}
                         <div className="flex-1 overflow-y-auto p-6 space-y-4">
                             {messages[selectedUser]?.map((message) => (
                                 <div key={message.id} 
@@ -96,8 +93,6 @@ export default function Messages() {
                                 </div>
                             ))}
                         </div>
-
-                        {/* Message input */}
                         <div className="h-20 border-t border-slate-700 px-6 flex items-center">
                             <input 
                                 type="text" 
@@ -107,7 +102,6 @@ export default function Messages() {
                         </div>
                     </div>
                 ) : (
-                    // Default view when no chat is selected
                     <div className="flex flex-col items-center justify-center space-y-4 w-full h-full">
                         <PiMessengerLogo size={50} className="text-slate-600" />
                         <p className="text-slate-600 text-2xl font-bold">Your messages</p>

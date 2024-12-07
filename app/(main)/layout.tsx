@@ -15,7 +15,7 @@ export default function MainLayout({
         <div className="">
             <section className="flex flex-row w-screen h-screen max-w-[1840px] mx-auto">
                 <LeftBar />
-                <main className={`flex relative flex-col h-full w-full sm:w-[${isMessagesPage ? '79%' : '79%'}`}>
+                <main className={`flex relative flex-col h-full w-full ${isMessagesPage ? 'sm:w-[90%]' : 'sm:w-[79%]'}`}>
                     <Suspense fallback={<div>Loading...</div>}>
                         {children}
                     </Suspense>
